@@ -4,3 +4,4 @@ node_modules
 fabfile.py
 run.sh
 public
+npm-debug.log
