@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Jason Jones is a professional web developer. Word is he's pretty good.">
+    <meta name="author" content="Jason Jones https://github.com/jgj">
+
+    <title>Jason Jones - Curriciulum Vitae</title>
+
+    <link rel='stylesheet' type='text/css' href='{{ webfonts }}'>
+    {% if env == 'production' %}
+        <link rel="stylesheet" href="/css/style.min.css">
+    {% else %}
+        <link rel="stylesheet" href="/css/style.css">
+    {% endif %}
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="page-resume{% if pdfmode %} pdf-mode{% endif %}">
+    <div class="container">
+        <nav class="nav spec">
+            <span class="intro">Curriciulum Vitae for your consideration, made available this <span class="date">{{ now }}</span></span>.
+
+            <a class="btn btn-send">
+                <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-send fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="description">Share Resume</span>
+            </a>
+
+            <a class="btn btn-contact">
+                <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="description">Contact Jason</span>
+            </a>
+
+            <a class="btn btn-pdf">
+                <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="description">Download PDF</span>
+            </a>
+
+            <a class="btn btn-print">
+                <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-print fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="description">Print CV</span>
+            </a>
+        </nav>
+
+        <header class="header basics">
+            <h1 class="name">
+                Jason Jones
+            </h1>
+
+            <h2 class="title">
+                <span class="flourish">Developer of</span> <strong>Fine Web Experiences</strong>
+                <small>Since 1999</small>
+            </h2>
+        </header>
+
+        <section class="section contact">
+            <h3>Contact</h3>
+            <article class="content">
+                <p>
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    NJ/NYC/PA
+                </p>
+                <p>
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="mailto:jay@subdes.co" class="email">jay@subdes.co</a>
+                </p>
+                <p>
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    570-977-8022
+                </p>
+            </article>
+        </section>
+        
+        <section class="section availability">
+            <h3>Availability</h3>
+            <article class="content">
+                <p>
+                    <span class="label">Freelance:</span><span> Yes</span>
+                </p>
+                <p>
+                    <span class="label">Relocation:</span><span> Maybe</span>
+                </p>
+                <p>
+                    <span class="label">Remote:</span><span> Preferred</span>
+                </p>
+            </article>
+        </section>
+
+        <blockquote class="hook">
+            <div class="fa fa-quote-left fa2"></div>
+            Jason is a versatile developer with a keen eye for design and commitment to best practices.
+            <div class="fa fa-quote-right fa2"></div>
+        </blockquote>
+        
+        <section class="section languages">
+            <h3>Perferred languages/platforms</h3>
+            <article class="content">
+                <ul class="skill-list">
+                    <li class="expert">Python</li>
+                    <li class="expert">JavaScript</li>
+                    <li class="expert">HTML5</li>
+                    <li class="expert">CSS3</li>
+            
+                    <li class="strong">SQL</li>
+                    <li class="strong">Nodejs</li>
+                    <li class="strong">Actionscript</li>
+                    <li class="intermediate">C#</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="section libraries">
+            <h3>Preferred Libraries/Frameworks</h3>
+            <article class="content">
+                <ul class="skill-list">
+                    <li class="expert">Django</li>
+                    <li class="expert">Vue.js</li>
+                    <li class="expert">jQuery</li>
+                    <li class="expert">Bootstrap</li>
+
+                    <li class="strong">PostgreSQL</li>
+                    <li class="strong">Backbone</li>
+                    <li class="strong">D3.js</li>
+                    <li class="intermediate">Flask</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="section os">
+            <h3>Preferred Operating Systems</h3>
+            <article class="content">
+                <ul class="skill-list">
+                    <li class="expert">Windows</li>
+                    <li class="expert">OS X</li>
+                    <li class="strong">Linux</li>
+                    <li class="intermediate">Android</li>
+                </ul>
+            </article>
+        </section>
+
+        <blockquote class="hook">
+            <div class="fa fa-quote-left fa2"></div>
+            Jason is whip smart, super helpful and always brings his A game.
+            <div class="fa fa-quote-right fa2"></div>
+        </blockquote>
+        
+        <section class="section experience">
+            <h3>Experience</h3>
+        
+            <ul class="experience-list">
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Unitrends</h4>
+                        <p class="duration">2012 - 2014</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Full-stack developer/designer</li>
+                        <li class="highlight">Django application, custom front-end, massive nested forms</li>
+                        <li class="highlight">Scaling big sets of data and complex user workflows</li>
+                        <li class="highlight">Interactive d3.js tutorial for provisioning and configuring UVB 8</li>
+                        <li class="technologies">
+                            Django, PostgreSQL, jQuery, jQueryUI, moment.js, underscore.js
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Peak Resorts</h4>
+                        <p class="duration">2007 - 2011</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Interactive Media Manager</li>
+                        <li class="highlight">Development &amp; coordination of online presence &amp; marketing</li>
+                        <li class="highlight">Branding, photography, magazine ads, billboards &amp; copy writing</li>
+                        <li class="highlight">Interactive &amp; social experiences for customers &amp; marketers</li>
+                        <li class="technologies">
+                            Drupal, jQuery, Django
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Zeta Interactive</h4>
+                        <p class="duration">2007</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Rich media developer</li>
+                        <li class="highlight">Flash/Actionscript development</li>
+                        <li class="highlight">Video, animation, games &amp; advertisements</li>
+                        <li class="highlight">CSS wizardry; pixel perfection and bug stomping in IE6</li>
+                        <li class="technologies">
+                            Flash, Actionscript, CSS
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Imirage</h4>
+                        <p class="duration">2006 - 2007</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Web designer</li>
+                        <li class="highlight">High-impact designs and front-end development</li>
+                        <li class="highlight">Rich user experiences when Flash was still cool</li>
+                        <li class="highlight">Early adopter of web development standards</li>
+                        <li class="technologies">
+                            Flash, Actionscript, Photoshop, HTML, CSS
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Substance Designs</h4>
+                        <p class="duration">2002 - Forever</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Independent consultant</li>
+                        <li class="highlight">Brochure, eCommerce, applications &amp; integrations</li>
+                        <li class="highlight">Strategy, marketing &amp; SEO</li>
+                        <li class="highlight">Graphic design, advertising &amp; print collateral</li>
+                        <li class="technologies">
+                            Django, Vue.js, Backbone, Drupal
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-item item">
+                    <header class="experience-header">
+                        <h4 class="company">Earlier</h4>
+                        <p class="duration">1999 - 2002</p>
+                    </header>
+                    <ul class="highlights">
+                        <li class="position">Self-taught since 1999</li>
+                        <li class="highlight">Intern: Platform.net, Brooklyn, 2000</li>
+                        <li class="highlight">Student: Pratt Institute pre-college, Graphic Design, 2001</li>
+                        <li class="highlight">Amatuer: Creator of tacky band websites, 2002</li>
+                        <li class="technologies">
+                            Photoshop, Flash, Notepad.exe
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <blockquote class="hook">
+            <div class="fa fa-quote-left fa2"></div>
+            I am a life-long learner, I love what I do and I use a mechanical keyboard.
+            <div class="fa fa-quote-right fa2"></div>
+        </blockquote>
+
+
+        <section class="section education">
+            <h3>Formal Education</h3>
+            
+            <ul class="education-list">
+                <li class="education-item item">
+                    <h4 class="institution">
+                        Kutztown University of Pennsylvania
+                        <span class="duration">2002-2007</span>
+                    </h4>
+                    <p class="study">Professional Writing</p>
+                </li>
+                
+                <li class="education-item item">
+                    <h4 class="institution">
+                        Pratt Institute, Brooklyn, NY
+                        <span class="duration">2001</span>
+                    </h4>
+                    <p class="study">Graphic Design (pre-college)</p>
+                </li>
+            </article>
+        </section>
+
+        <footer class="footer">
+            &copy; 1999-2014 <a href="/" title="Back to JayJones.me">Jason Jones</a>. References available upon request.
+        </footer>
+    </div>
+
+    <div class="contact-dialog dialog hidden">
+        <form class="contact-form form panel" action="/send-message/" method="post">
+            <h3 class="title">
+                <i class="fa fa-comment"></i> Drop Jason a Line
+            </h3>
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email Address">
+
+            <textarea name="message" id="message" required placeholder="Fine, type whatever you want">
+Greetings Mr. Jones,
+
+I write in pure astonishment at your storied background and impeccable presentation in order to perhaps engage your services toward mine own ends or perhaps simply to experience the thrill of reading your reply. I do so of sound mind and body and with the utmost confidence that you will respond in a timely manner and incomparable elegance.
+            </textarea>
+            <p class="help">I look forward to hearing from you</p>
+
+            <button type="submit" class="btn btn-submit">
+                <i class="fa fa-check"></i> Share
+            </button>
+
+            <button type="reset" class="btn btn-clear">
+                <i class="fa fa-eraser"></i> Clear
+            </button>
+        </form>
+    </div>
+
+    <div class="send-dialog dialog hidden">
+        <form class="send-form form panel" action="/send-resume/" method="post">
+            <h3 class="title">
+                <i class="fa fa-send"></i> Share Jason with a Colleague
+            </h3>
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email Address">
+            <input type="email" name="recipient" required placeholder="Recipient Email Address">
+
+            <textarea name="message" id="message" required placeholder="Fine, type whatever you want">
+You are cordially invited to peruse the complete resume of one Jason Jones, a developer and designer of internet-enabled applications and properties; keen is his eye for design and steadfast his commitment to excellence.
+
+For a fair price he can avail himself to you or your organization for the purposes of planning, building, fixing or maintaining technological creations of high quality and low toxicity.
+
+The best method for contacting Mr. Jones is electronic mail, sent directly and with expedience to jay@subdes.co. Mr. Jones is also available via terrestrial cellular telephone, the correct sequence of digits required to reach him being 1 570 977 8022.
+
+I do hereby and without reservation officially introduce Mr. Jones into your awareness and dearly hope you consider his services for your next and most important project.
+            </textarea>
+            <p class="help">Links will be automatically included in the email</p>
+
+            <button type="submit" class="btn btn-submit">
+                <i class="fa fa-check"></i> Share
+            </button>
+
+            <button type="reset" class="btn btn-clear">
+                <i class="fa fa-eraser"></i> Clear
+            </button>
+        </form>
+    </div>
+
+    {% if env == 'production' %}
+        <script type="text/javascript" src="/js/libs.min.js"></script>
+        <script type="text/javascript" src="/js/resume.min.js"></script>
+    {% else %}
+        <script type="text/javascript" src="/js/libs.js"></script>
+        <script type="text/javascript" src="/js/resume.js"></script>
+    {% endif %}
+</body>
+</html>
