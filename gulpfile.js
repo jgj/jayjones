@@ -64,6 +64,6 @@ gulp.task('watch', function() {
     gulp.watch(paths.libs, ['libs']);
 });
 
-gulp.task('deploy', ['dist']);
+gulp.task('deploy', ['fonts', 'dist']);
 
 gulp.task('default', ['fonts', 'less', 'libs', 'js', 'watch']);
