@@ -75,7 +75,7 @@
         loader = showLoading();
 
         promise.post(form.action, data, xhropts).then(function(err, resp, xhr) {
-            hideLoading();
+            hideLoading(loader);
             resp = JSON.parse(resp);
 
             if(xhr.status === 200 && resp.success) {
