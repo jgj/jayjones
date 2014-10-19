@@ -41,7 +41,9 @@ gulp.task('js', function() {
 gulp.task('dist', function() {
     gulp.src(paths.js)
         .pipe(uglify())
-        .pipe(rename('main.min.js'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(gulp.dest('./public/js/'));
 
     gulp.src(paths.libs)
