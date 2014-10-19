@@ -9,7 +9,7 @@
     var btnContact = document.querySelector(".btn-contact"),
         contactDialog = document.querySelector(".contact-dialog"),
         contactForm = document.querySelector(".contact-form"),
-        xhropts = {"Accept": "application/json", "Content-Type": "application/json"},
+        xhropts = {"Accept": "application/json", "Content-Type": "application/json; charset=UTF-8"},
         loader;
 
 
