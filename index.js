@@ -26,11 +26,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/resume/', function(req, res) {
-    res.render('resume', {now: moment().format("dddd [the] Do [of] MMMM, YYYY")});
+    res.render('resume', {"now": moment().format("dddd [the] Do [of] MMMM, YYYY")});
 });
 
 app.get('/resume/.pdfmode/', function(req, res) {
-    res.render('resume', {"pdfmode": true});
+    res.render('resume', {"pdfmode": true, "now": moment().format("dddd [the] Do [of] MMMM, YYYY")});
 });
 
 app.get('/resume/pdf/', function(req, res) {
